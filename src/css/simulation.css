@@ -1,0 +1,24 @@
+.btnSimulation{
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  display: outline-block;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  margin: 5px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+
+.valider:hover{
+  background-color: rgb(148, 255, 185);
+}
+
+.restart:hover{
+  background-color: rgb(254, 113, 113);
+}
+
+.retour:hover{
+  background-color: rgb(255, 241, 173);
+}

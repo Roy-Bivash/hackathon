@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/cadrillage.css">
+  <link rel="stylesheet" href="./css/goutte.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="./css/card.css">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+  <script src="./bootstrap/js/bootstrap.js"></script>
+  <script src="./fonctions/newWindow.js"></script>
+
+  
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="logoa" href="index.html"><img src="./image/GENOPOLE_LOGO.png" alt="Bootstrap" width="100"
+          height="72">SYNBIODROP </img></a>
+    </div>
+  </nav>
+  <br>
+  <h1 class=" text-center">Simulateur de SynBioDrop</h1>
+  <p class="text-center">Bienvenue dans le simulateur de SynBioDrop.<br>Sur cette application vous pouvez
+    mettre en place
+    un scripte et simuler
+    sont résultat facilement et rapidement.</p>
+  <br>
+
+
+  <div class="indexcenter">
+    <div class="indexmenu">
+      <h2>SCRIPTING</h2>
+      <p>Ici vous pouvez créer un script et ajouter des gouttes</p>
+
+
+      <div class="flip-box-front">
+        <img src="image/script.png" style="width:200px;" class="imgicon">
+      </div>
+
+
+      <a href="vues/ajoutGoutte.html" class="button button2">Ajouter des gouttes</a>
+      <a href="vues/scripting.html" class="button button2">Commencer un script</a>
+    </div>
+    <div class="indexmenu">
+      <h2>SIMULATION</h2>
+      <p>Ici vous pouvez observer le résultat de votre script</p>
+      <img src="image/sim.png" style="width:200px;" class="imgicon">
+      <a onClick="openWindow('vues/simulation.html', '510', '610')" target="_blank" class="button button2">Commencer la simulation</a>
+    </div>
+  </div>
+
+</body>
+
+</html>

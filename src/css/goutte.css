@@ -1,0 +1,22 @@
+.goute{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 9px;
+  transition: 0.1s;
+}
+
+.btngouttes{
+  width: 30px;
+  margin-right: 5px;
+}
+
+.gouttesbuttons{
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.classgouttes{
+  display: flex;
+  justify-content: center;
+}

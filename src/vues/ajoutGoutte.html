@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+  <script src="../bootstrap/js/bootstrap.js"></script>
+
+  <link rel="stylesheet" href="../css/cadrillage.css">
+  <link rel="stylesheet" href="../css/goutte.css">
+  <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body class="gouttesbody">
+  <nav class=" navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="logoa" href="../index.html"><img src="../image/GENOPOLE_LOGO.png" alt="Bootstrap" width="100"
+          height="72">SYNBIODROP </img></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class=" nav-item">
+          <a class="nav-link" href="../index.html">Accueil</a>
+        </li>
+        <li class=" nav-item">
+          <a class="nav-link" href="scripting.html">Scripting</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="simulation.html"">Simulation</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+  <div>
+
+    <br><br>
+    <h2 class=" text-center">Les gouttes dans la grille</h2>
+            <div class="classgouttes">
+
+              <button type="button" class="btn btn-outline-primary gouttesbuttons" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" style="margin-right: 20px;">
+                <img src="../image/gouttes.png" class="btngouttes">
+                Ajouter une goutte</button>
+              <a href="ajoutGoutte.html" style="margin-right: 20px;"><button type="button"
+                  class="btn btn-outline-primary gouttesbuttons"><img src="../image/retry.png"
+                    class="btngouttes">Recommencer</button>
+              </a>
+              <button type="button" class="btn btn-outline-primary gouttesbuttons" id="btnTermine"><img
+                  src="../image/valider.png" class="btngouttes">Valider</button>
+
+            </div>
+
+
+
+
+            <br><br>
+
+            <div id="divLesGouttes"></div>
+
+
+
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Ajouter une Goutte</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <label>Position sur l'axe X : </label>
+            <input type="number" max="9" min="0" id="inputPositionX">
+            <br>
+            <label>Position sur l'axe Y : </label>
+            <input type="number" max="9" min="0" id="inputPositionY">
+            <br>
+            <label>Couleur :</label>
+            <select id="inputCouleur">
+              <option value="blue">Bleu</option>
+              <option value="red">Rouge</option>
+              <option value="yellow">Jaune</option>
+              <option value="green">Vert</option>
+              <option value="purple">Violet</option>
+              <option value="black">Noir</option>
+              <option value="white">Blanc</option>
+              <select />
+              <br>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+            <button type="button" class="btn btn-primary" id="btnValider">Valider</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="../class/Goutte.js"></script>
+    <script src="../class/Melange.js"></script>
+
+    <script src="../fonctions/ajoutGoutte.js" defer></script>
+
+    
+
+</body>
+
+</html>

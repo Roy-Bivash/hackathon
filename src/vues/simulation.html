@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/cadrillage.css">
+  <link rel="stylesheet" href="../css/goutte.css">
+  <link rel="stylesheet" href="../css/simulation.css">
+</head>
+
+
+<body onload="simulation()">
+
+  <div id="grille"></div>
+
+  <div id="lesGoutes"></div>
+
+  <div id="forAction">
+    <br>
+    <button type="button" class="btnSimulation valider" id="btnStartSimulation">START</button>
+    <button type="button" class="btnSimulation restart" onclick="window.location.reload();">RELOAD</button>
+    <button type="button" class="btnSimulation retour" onclick="window.location.href = './scripting.html';">RETOUR</button>
+    <button type="button" class="btnSimulation retour" onclick="localStorage.clear();window.location.reload();">CLEAR</button>
+  </div>
+
+
+  <script src="../class/Goutte.js"></script>
+  <script src="../class/Melange.js"></script>
+
+  <script src="../fonctions/cadrillage.js" defer></script>
+  <script src="../fonctions/simulation.js" defer></script>
+
+
+</body>
+
+</html>
